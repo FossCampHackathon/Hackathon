@@ -1,0 +1,2 @@
+class Csi < ActiveRecord::Base
+end
