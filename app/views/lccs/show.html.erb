@@ -1,0 +1,9 @@
+<h3> LCC EVENT LIST </h3>
+<% @lccs.each do |l| %>
+  <tr>
+    <td><%= l.id %></td>
+    <td><%= l.event %></td>
+    <td><%= l.desc %></td>
+    <td><%= l.datetime %></td><br>
+</tr>
+<% end %>

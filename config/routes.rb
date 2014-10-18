@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+ get 'auth/:provider/callback' => 'sessions#create'
+ get 'auth/failure' => redirect('/')
 
-resources :tech
-   resources :csi 
-   resources :lcc
-
+resources :lccs
+resources :csis
 
 
   # The priority is based upon order of creation: first created -> highest priority.

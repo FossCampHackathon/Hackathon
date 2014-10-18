@@ -1,0 +1,11 @@
+<h3> CSI LIST OF EVENTS </h3>
+<% @csis.each do |l| %>
+  <tr>
+    <td><%= l.id %></td>
+    <td><%= l.event %></td>
+    <td><%= l.desc %></td>
+    <td><%= l.datetime %></td>
+    <br>
+</tr>
+<% end %>
+<%= link_to 'Add new CSI Event', new_csi_path %>

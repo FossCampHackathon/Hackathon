@@ -1,7 +1,7 @@
 class TechController < ApplicationController
 
 def index
-render 'new'
+render 'index'
 end
 
 

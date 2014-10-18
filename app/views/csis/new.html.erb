@@ -1,0 +1,11 @@
+<%= form_for @csi do |f| %> 
+  <p>
+  Event name:  <%= f.text_field :event %><br>
+  Description:  <%= f.text_field :desc %><br>
+  Event date and time:  <%= f.text_field :datetime %>
+  </p>
+
+<p> 
+<%= f.submit %>
+</p>
+<% end %>

@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :colleges
+ get 'auth/:provider/callback' => 'sessions#create'
+ get 'auth/failure' => redirect('/')
 
-resources :tech do
-   resources :csi 
-   resources :lcc
-end
+resources :lccs
+resources :csis
 
 
   # The priority is based upon order of creation: first created -> highest priority.

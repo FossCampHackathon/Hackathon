@@ -1,3 +1,5 @@
 class Csi < ActiveRecord::Base
-belongs_to :tech
+validates :event, presence: true
+validates :desc, presence: true
+validates :datetime, presence: true
 end

@@ -1,0 +1,9 @@
+<h3> CSI LIST OF EVENTS CREATED </h3>
+<% @csis.each do |l| %>
+  <tr>
+ 
+    <td><%= l.event %></td>
+    <td><%= l.desc %></td>
+    <td><%= l.datetime %></td><br>
+</tr>
+<% end %>

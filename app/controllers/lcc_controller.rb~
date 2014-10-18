@@ -1,6 +1,25 @@
 class LccController < ApplicationController
+def index 
+end
+
 def new 
-render 'new'
+@lcc = Lcc.new 
+end
+
+def show
+@lcc = Lcc.find(params[:id])
+end
+
+def create 
+@lcc = Lcc.new(lcc_params) 
+@lcc.save 
+redirect
+end
+
+
+private 
+def lcc_params
+params.require(:lcc).permit(:event,:desc,:dateandtime) 
 end
 
 end
