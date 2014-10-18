@@ -1,0 +1,4 @@
+<h1>Welcome to TECH EVENTS PAGE</h1>
+<%= link_to 'CSI', csi_index %>
+<%= link_to 'LCC', lcc_index %> 
+
